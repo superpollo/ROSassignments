@@ -1,0 +1,15 @@
+http://wiki.ros.org/executive_teer/Tutorials/On%20Termination
+
+https://answers.ros.org/question/12793/rospy-calling-clear-service-programatically/
+
+http://wiki.ros.org/rospy/Overview/Services
+
+http://wiki.ros.org/ROS/Tutorials/WritingServiceClient%28python%29
+
+http://docs.ros.org/en/api/turtlesim/html/srv/SetPen.html
+
+http://wiki.ros.org/turtlesim
+
+https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
+
+

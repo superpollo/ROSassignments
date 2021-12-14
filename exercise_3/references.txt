@@ -1,0 +1,6 @@
+https://www.programcreek.com/python/example/88502/geometry_msgs.msg.Vector3
+
+
+http://docs.ros.org/en/api/geometry_msgs/html/msg/Twist.html
+
+http://wiki.ros.org/turtlesim/Tutorials/Moving%20in%20a%20Straight%20Line

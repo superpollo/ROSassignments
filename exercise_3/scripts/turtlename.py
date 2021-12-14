@@ -38,6 +38,7 @@ def turtlename():
 			rate.sleep()
 			j = j+1
 		#print("out of loop")
+		rospy.signal_shutdown("Finished")
 
 if __name__ == '__main__':
 	try:
