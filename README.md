@@ -33,14 +33,11 @@ Ex. 4 part B: exercise_4 > scripts > turtlesplitname.py
 - The positions of the brand on exercise 4 are random to give it a bit of "urban" touch. The positions for part A and part B are different.
 
 ## Results Turtlesim 
-Results for exercise 3:  
-<img src="ResultEx3.png" width="200" height="200">  
-
-Results for exercise 4:  
-<img src="ResultEx4.png" width="200" height="200">  
+Results for exercise 3:                           Results for exercise 4:   
+<img src="ResultEx3.png" width="400" height="400"> <img src="ResultEx4.png" width="400" height="400">  
 
 Comparison to real-life brand:  
-<img src="CloseUpAJMA_Turtlesim.png" width="100" height="100"> <img src="LogoVideo_Cooler.png" width="100" height="150">  
+<img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
 *Notice that the turtle generated also has the peace symbol ;)*
 
