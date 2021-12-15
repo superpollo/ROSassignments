@@ -39,7 +39,7 @@ Results for exercise 3 (left) and exercise 4 (right):
 Comparison to real-life brand:  
 <img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
-<font size="2">*Notice that the turtle generated also has the peace symbol ;)*</font>
+<font size="1">*Notice how the turtle generated also has the peace symbol ;)*</font>
 
 ## References
 To accomplish exercise 3, I was greatly inspired by:  
