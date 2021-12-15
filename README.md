@@ -33,7 +33,7 @@ Ex. 4 part B: exercise_4 > scripts > turtlesplitname.py
 - The positions of the brand on exercise 4 are random to give it a bit of "urban" touch. The positions for part A and part B are different.
 
 ## Results Turtlesim 
-Results for exercise 3:                           Results for exercise 4:   
+Results for exercise 3 (left) and exercise 4 (right):   
 <img src="ResultEx3.png" width="400" height="400"> <img src="ResultEx4.png" width="400" height="400">  
 
 Comparison to real-life brand:  
