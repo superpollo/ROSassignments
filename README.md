@@ -66,4 +66,4 @@ http://wiki.ros.org/turtlesim
 https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
 
 
-[^1]: *Notice how the turtle generated also has the peace symbol ;)*
+[^1]: *Notice how the turtle generated has also got the peace symbol ;)*
