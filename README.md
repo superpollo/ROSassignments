@@ -30,16 +30,17 @@ Ex. 4 part B: ROSassignmnents/exercise_4/scripts/turtlesplitname.py
 
 ## Clarifications
 - In order to create my brand using Turtlesim node, there is a moment where the turtle does the circle twice. The reason for this is that the position the turtle ends at after the second round, is ideal to begin the stroke of the first initial.
+- As agreed previously with the professor, for my case, in exercise 4 instead of separating each initial from the brand, I will make different copies of it with different location and colour.
 - The positions of the brand on exercise 4 are random so to make it more "graffiti like", which seemed cooler to me. The positions for part A and part B on exercise 4 are different.
 
-## Results Turtlesim 
-Results for exercise 3 (left) and exercise 4 (right):   
+
+## Results 
+Results for exercise 3 (left) and exercise 4 (right)[^1]:   
 <img src="ResultEx3.png" width="400" height="400"> <img src="ResultEx4.png" width="400" height="400">  
 
 Comparison to real-life brand:  
 <img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
-<font size="1">*Notice how the turtle generated also has the peace symbol ;)*</font>
 
 ## References
 To accomplish exercise 3, I was greatly inspired by:  
@@ -63,3 +64,6 @@ http://docs.ros.org/en/api/turtlesim/html/srv/SetPen.html
 http://wiki.ros.org/turtlesim
 
 https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
+
+
+[^1]: *Notice how the turtle generated also has the peace symbol ;)*
