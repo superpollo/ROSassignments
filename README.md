@@ -11,7 +11,7 @@ As for exercise 4, ROS services shall be included to draw the letters separately
 
 ### Letters
 In my case, I went with my brand, which I believe represents me.  
-![Real-life brand](LogoVideo_Cooler.png | width=50)  
+<img src="LogoVideo_Cooler" width="50" height="50">  
 My initials are A.J.M.A. which are hidden in the brand as the next figure shows.  
 /assets/image/LogoVideo_CoolerClarified.png
 
