@@ -16,21 +16,21 @@ My initials are A.J.M.A. which are hidden in the brand as the next figure shows.
 <img src="LogoVideo_CoolerClarified.png" width="200" height="250">  
 
 ## Where to find the files
-To begin with, beginnerTutorials and CMakeLists shall be ignored. They were pushed by error as they share the same local repository with exercises folders.
-Both exercise_3 and exercise_4 folders are the ROS packages. Inside each you will find a folder called scripts that contains both files .sh (for part A of exercises) and .py (for part B of exercises).  
+To begin with, beginnerTutorials and CMakeLists shall be ignored. They were pushed by mistake, since they share the same local repository with exercises folders.  
+Both exercise_3 and exercise_4 folders are the ROS packages. Inside each, you will find a folder called scripts that contains both files .sh (for part A) and .py (for part B).  
 
-Ex. 3 part A: exercise_3 > scripts > turtlename.sh  
+Ex. 3 part A: ROSassignmnents/exercise_3/scripts/turtlename.sh  
 
-Ex. 3 part B: exercise_3 > scripts > turtlename.py  
+Ex. 3 part B: ROSassignmnents/exercise_3/scripts/turtlename.py  
 
-Ex. 4 part A: exercise_4 > scripts > turtlesplitname.sh  
+Ex. 4 part A: ROSassignmnents/exercise_4/scripts/turtlesplitname.sh  
 
-Ex. 4 part B: exercise_4 > scripts > turtlesplitname.py  
+Ex. 4 part B: ROSassignmnents/exercise_4/scripts/turtlesplitname.py  
 
 
 ## Clarifications
 - In order to create my brand using Turtlesim node, there is a moment where the turtle does the circle twice. The reason for this is that the position the turtle ends at after the second round, is ideal to begin the stroke of the first initial.
-- The positions of the brand on exercise 4 are random to give it a bit of "urban" touch. The positions for part A and part B are different.
+- The positions of the brand on exercise 4 are random so to make it more "graffiti like", which seemed cooler to me. The positions for part A and part B on exercise 4 are different.
 
 ## Results Turtlesim 
 Results for exercise 3 (left) and exercise 4 (right):   
@@ -39,7 +39,7 @@ Results for exercise 3 (left) and exercise 4 (right):
 Comparison to real-life brand:  
 <img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
-*Notice that the turtle generated also has the peace symbol ;)*
+<font size="2">*Notice that the turtle generated also has the peace symbol ;)*</font>
 
 ## References
 To accomplish exercise 3, I was greatly inspired by:  
