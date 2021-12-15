@@ -60,8 +60,8 @@ def turtlename():
     Description
     -----------
     Creates a publisher to "turtle1/cmd_vel" topic,
-	sending values for "Twist" linear and angular
-	parameters of turtle velocity.
+    sending values for "Twist" linear and angular
+    parameters of turtle velocity.
 
     Parameters
     ----------
