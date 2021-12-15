@@ -11,9 +11,9 @@ As for exercise 4, ROS services shall be included to draw the letters separately
 
 ### Letters
 In my case, I went with my brand, which I believe represents me.  
-<img src="LogoVideo_Cooler.png" width="100" height="100">  
+<img src="LogoVideo_Cooler.png" width="200" height="250">  
 My initials are A.J.M.A. which are hidden in the brand as the next figure shows.  
-/assets/image/LogoVideo_CoolerClarified.png
+<img src="LogoVideo_CoolerClarified.png" width="200" height="250">  
 
 ## Where to find the files
 To begin with, beginnerTutorials and CMakeLists shall be ignored. They were pushed by error as they share the same local repository with exercises folders.
@@ -34,15 +34,15 @@ Ex. 4 part B: exercise_4 > scripts > turtlesplitname.py
 
 ## Results Turtlesim 
 Results for exercise 3:  
-*add image of turtlesim node*
+<img src="ResultEx3.png" width="200" height="200">  
 
 Results for exercise 4:  
-*add image of turtlesim node*
+<img src="ResultEx4.png" width="200" height="200">  
 
 Comparison to real-life brand:  
-*add image of close-up brand on turtlesim node and real-life brand*
+<img src="CloseUpAJMA_Turtlesim.png" width="100" height="100"> <img src="LogoVideo_Cooler.png" width="100" height="150">  
 
-*Note that turtle generated also has peace symbol ;)*
+*Notice that the turtle generated also has the peace symbol ;)*
 
 ## References
 To accomplish exercise 3, I was greatly inspired by:  
