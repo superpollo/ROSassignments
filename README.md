@@ -11,7 +11,7 @@ As for exercise 4, ROS services shall be included to draw the letters separately
 
 ### Letters
 In my case, I went with my brand, which I believe represents me.  
-*add image of AJMA brand*
+*add image of AJMA brand*  
 My initials are A.J.M.A. which are hidden in the brand as the next figure shows.  
 *add image of AJMA brand clarifying the initials*
 
