@@ -16,7 +16,7 @@ My initials are A.J.M.A. which are hidden in the brand as the next figure shows.
 <img src="LogoVideo_CoolerClarified.png" width="200" height="250">  
 
 ## Where to find the files
-To begin with, beginnerTutorials and CMakeLists shall be ignored. They were pushed by mistake, since they share the same local repository with exercises folders.  
+To begin with, beginnerTutorials and CMakeLists shall be ignored. They were pushed by mistake, since they share the same local repository with the exercises' folder.  
 Both exercise_3 and exercise_4 folders are the ROS packages. Inside each, you will find a folder called scripts that contains both files .sh (for part A) and .py (for part B).  
 
 Ex. 3 part A: ROSassignmnents/exercise_3/scripts/turtlename.sh  
