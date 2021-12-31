@@ -54,26 +54,27 @@ angular = {
 arr_length = len(linear['x']) - 1
 	
 
-def turtlename():
+def turtlename(start, stop):
 	
 	"""
     Description
     -----------
     Creates a publisher to "turtle1/cmd_vel" topic,
-	sending values for "Twist" linear and angular
-	parameters of turtle velocity.
+    sending values for "Twist" linear and angular
+    parameters of turtle velocity.
 
     Parameters
     ----------
-    None
+    start : Position from where to start drawing.
+    stop : Position to stop in order to change colours.
 
     Returns
     -------
-	None
+    None
 
 	"""
 
-	j = 0
+	j = start
 
 	pub = rospy.Publisher('/turtle1/cmd_vel', Twist, queue_size=10)
 	rate = rospy.Rate(1)
@@ -91,7 +92,7 @@ def turtlename():
 
 	while not rospy.is_shutdown():
 		
-		while j<=arr_length:
+		while j<=stop:
 			
 			pos_msg.linear.x = linear['x'][j]
 			pos_msg.linear.y = linear['y'][j]
@@ -107,7 +108,7 @@ def turtlename():
 
 			j = j+1
 		
-
+		
 		return
 
 
@@ -117,10 +118,10 @@ def change_pen_client(r, g, b, w, state):
     Description
     -----------
     Creates a client for "turtle1/set_pen" service,
-	calling it with the values set as parameters of
-	the function.
-	Will change colour and width of pen and set it
-	ON or OFF.
+    calling it with the values set as parameters of
+    the function.
+    Will change colour and width of pen and set it
+    ON or OFF.
 
     Parameters
     ----------
@@ -136,12 +137,12 @@ def change_pen_client(r, g, b, w, state):
     w : uint8
         Width value of pen.
     state : uint8
-        	Determines wether pen is ON or OFF.
-			ON = 0; OFF = 1.
+    Determines wether pen is ON or OFF.
+    ON = 0; OFF = 1.
 
     Returns
     -------
-	None
+    None
 
 	"""
 
@@ -149,12 +150,12 @@ def change_pen_client(r, g, b, w, state):
 	
 	try:
 
-		change_pen = rospy.ServiceProxy('/turtle1/set_pen', SetPen)
-		change_pen(r, g, b, w, state)
+	     change_pen = rospy.ServiceProxy('/turtle1/set_pen', SetPen)
+	     change_pen(r, g, b, w, state)
 	
 	except rospy.ServiceException as e:
 
-		print("Service call failed: %s"%e)
+	    print("Service call failed: %s"%e)
 
 
 def teleport_client(x, y, z):
@@ -163,22 +164,22 @@ def teleport_client(x, y, z):
     Description
     -----------
     Creates a client for "turtle1/teleport_absolute"
-	service, calling it with the values that are sent
-	as parameters of the function.
-	Will move turtle to a new position.
+    service, calling it with the values that are sent
+    as parameters of the function.
+    Will move turtle to a new position.
 
     Parameters
     ----------
     x : float32
-		Position on the X axis to send the turtle.
-	y : float32
-		Position on the Y axis to send the turtle.
-	z : float32
-		Orientation of the turtle.
+    Position on the X axis to send the turtle.
+    y : float32
+    Position on the Y axis to send the turtle.
+    z : float32
+    Orientation of the turtle.
 
     Returns
     -------
-	None
+    None
 
 	"""
 
@@ -186,15 +187,13 @@ def teleport_client(x, y, z):
 
 	try:
 
-		teleport_to = rospy.ServiceProxy(
-								'/turtle1/teleport_absolute', 
-								TeleportAbsolute
-								)
-		teleport_to(x, y, z)
+            teleport_to = rospy.ServiceProxy('/turtle1/teleport_absolute', 
+			   		      TeleportAbsolute)
+	    teleport_to(x, y, z) 
 
 	except rospy.ServiceException as e:
 
-		print("Service call failed: %s"%e)
+	    print("Service call failed: %s"%e)
 
 
 def clear_client():
@@ -203,9 +202,9 @@ def clear_client():
     Description
     -----------
     Creates a client for "clear" service,
-	calling it will remove the previous 
-	lines drawn by the movement of the
-	turtle to a new position.
+    calling it will remove the previous 
+    lines drawn by the movement of the
+    turtle to a new position.
 
     Parameters
     ----------
@@ -213,7 +212,7 @@ def clear_client():
 
     Returns
     -------
-	None
+    None
 
 	"""
 
@@ -221,12 +220,12 @@ def clear_client():
 
 	try:
 
-		clear_lines = rospy.ServiceProxy('clear', EmptyServiceCall)
-		clear_lines()
+	    clear_lines = rospy.ServiceProxy('clear', EmptyServiceCall)
+	    clear_lines()
 
 	except rospy.ServiceException as e:
 
-		print("Service call failes: %s"%e)
+	    print("Service call failes: %s"%e)
 
 
 if __name__ == '__main__':
@@ -235,19 +234,27 @@ if __name__ == '__main__':
 
 	try:
 
-		clear_client()
-		change_pen_client(0, 0, 0, 0, 1)
-		teleport_client(1.0, 2.5, -0.3)
-		change_pen_client(255, 0, 0, 10, 0)
-		turtlename()
-		change_pen_client(0, 0, 0, 0, 1)
-		teleport_client(5.0, 5.5, 1.0)
-		change_pen_client(255, 255, 0, 5, 0)
-		turtlename()
-		change_pen_client(0, 0, 0, 0, 1)
-		teleport_client(7.0, 4.5, -1.0)
-		change_pen_client(255, 192, 203, 1, 0)
-		turtlename()		
-		rospy.signal_shutdown("Finished")
+	    clear_client()
+	    change_pen_client(0, 0, 0, 0, 1)
+	    teleport_client(1.0, 2.5, -0.3)
+	    change_pen_client(255, 0, 0, 10, 0)
+	    turtlename(0, 3)
+	    change_pen_client(200, 200, 100, 10, 0)
+	    turtlename(4, 6)
+	    change_pen_client(100, 50, 200, 10, 0)
+	    turtlename(7, 8)
+	    change_pen_client(150, 50, 50, 10, 0)
+	    turtlename(9, 11)
+	    change_pen_client(20, 30, 250, 10, 0)
+	    turtlename(12, 15)
+	    change_pen_client(0, 0, 0, 0, 1)
+	    teleport_client(5.0, 5.5, 1.0)
+	    change_pen_client(255, 255, 0, 5, 0)
+	    turtlename(0, 15)
+	    change_pen_client(0, 0, 0, 0, 1)
+	    teleport_client(7.0, 4.5, -1.0)
+	    change_pen_client(255, 192, 203, 1, 0)
+	    turtlename(0, 15)		
+	    rospy.signal_shutdown("Finished")
 
 	except rospy.ROSInterruptException: pass
