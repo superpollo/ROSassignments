@@ -41,6 +41,10 @@ Results for exercise 3 (left) and exercise 4 (right)[^2]:
 Comparison to real-life brand:  
 <img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
+After realization [^1]:
+<img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
+<img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> 
+
 
 ## References
 To accomplish exercise 3, I was greatly inspired by:  
