@@ -30,12 +30,12 @@ Ex. 4 part B: ROSassignmnents/exercise_4/scripts/turtlesplitname.py
 
 ## Clarifications
 - In order to create my brand using Turtlesim node, there is a moment where the turtle does the circle twice. The reason for this is that the position the turtle ends at after the second round, is ideal to begin the stroke of the first initial.
-- As agreed previously with the professor, for my case, in exercise 4 instead of separating each initial from the brand, I will make different copies of it with different location and colour.
+- As agreed previously with the professor, for my case, in exercise 4 instead of separating each initial from the brand, I will make different copies of it with different location and colour[^1].
 - The positions of the brand on exercise 4 are random so to make it more "graffiti like", which seemed cooler to me. The positions for part A and part B on exercise 4 are different.
 
 
 ## Results 
-Results for exercise 3 (left) and exercise 4 (right)[^1]:   
+Results for exercise 3 (left) and exercise 4 (right)[^2]:   
 <img src="ResultEx3.png" width="400" height="400"> <img src="ResultEx4.png" width="400" height="400">  
 
 Comparison to real-life brand:  
@@ -66,4 +66,5 @@ http://wiki.ros.org/turtlesim
 https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
 
 
-[^1]: *Notice how the turtle generated has also got the peace symbol ;)*
+[^1]: *I realized that this agreement made the exercise simpler or easier for me than for my colleagues, since I simply have to send the whole array without worrying to make it stop and how to make it stop in between each letter. I fixed the code in order to make it stop after each letter and change the colour. This way, the code could be easily reused and fits the exercise better. The new code is under the branch "polish". I attach a picture and code difference under Results.*
+[^2]: *Notice how the turtle generated has also got the peace symbol ;)*
