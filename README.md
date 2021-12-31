@@ -42,7 +42,8 @@ Comparison to real-life brand:
 <img src="CloseUpAJMA_Turtlesim.png" width="200" height="200"> <img src="LogoVideo_Cooler.png" width="200" height="200">  
 
 After realization [^1]:  
-<img src="ChangeTurtleFunction1.png" width="300" height="200"> <img src="ChangeTurtleFunction2.png" width="300" height="200">  
+<img src="ChangeTurtleFunction1.png" width="300" height="200">  
+<img src="ChangeTurtleFunction2.png" width="300" height="300">  
 Function "turtlename" has two new arguments: start, stop  
 <img src="ResultEx4Correction.png" width="200" height="200"> 
 
