@@ -44,7 +44,7 @@ Comparison to real-life brand:
 After realization [^1]:  
 <img src="ChangeTurtleFunction1.png" width="300" height="200">  
 <img src="ChangeTurtleFunction2.png" width="300" height="300">  
-Function "turtlename" has two new arguments: start, stop  
+Function "turtlename" has two new arguments: start, stop. It is possible to access the code under "polish" branch.  
 <img src="ResultEx4Correction.png" width="200" height="200"> 
 
 
