@@ -72,9 +72,19 @@ http://wiki.ros.org/turtlesim
 https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
 
 ## Idea  
-After the positive feedback from the professor for exercise 1 on using classes (object oriented coding), I thought on how could I apply it for these exercises too and an idea appeared.  
-Since at class we have many different people, we had all created the trajectories for many letters. Maybe the whole alphabet. Then, we could draw any letter and therefore, any word. But how could I store all the different trajectories for each letter and how could I send it to the turtle?  
-That is when I thought that classes could work. The class "Letter", for example, would hold the arrays for linear and angular velocities of the letter and maybe the method to draw the letter. Later, in the function that will send the topic message, we ask for a parameter of type Letter and "extract" the positions to draw it from it's arguments. (i.e. x_linear = G.x_linear).
+Since we all have different names, by doing this assignment we were unconsciously drawing the entire alphabet (or most of it). Therefore only withing our class there are the velocity coordinates of turtlesim to make most of the letters.  
+Maybe it would be possible to create a class name Letter with the linear and angular velocities arrays as the attributes.  
+Then we would build the database or enter all our letters this way and for the function that creates the topic, instead of looping through the array we made for our initials, we give the object of type Letter as a parameter.
+i.e. 
+class Letter (x_lin, y_lin, ..., z_ang)
+  self.x_l = x_lin
+  ...
+  self.z_a = z_ang 
+'# the attributes would be arrays, I know it would not be written this way but I know it is possible
+G = Letter([0.5, ...], [1.0, ...], ..., [0.0, ...])
+
+'# when calling the function that will draw
+turtlename(G)
 
 
 [^1]: *31/12/21: I realized that this agreement made the exercise simpler or easier for me than for my colleagues, since I simply have to send the whole array without worrying to make it stop and how to make it stop in between each letter. I fixed the code in order to make it stop after each letter and change the colour. This way, the code could be easily reused and fits the exercise better. The new code is under the branch "polish". I attach a picture and code difference under Results.*
