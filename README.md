@@ -76,14 +76,17 @@ Since we all have different names, by doing this assignment we were unconsciousl
 Maybe it would be possible to create a class name Letter with the linear and angular velocities arrays as the attributes.  
 Then we would build the database or enter all our letters this way and for the function that creates the topic, instead of looping through the array we made for our initials, we give the object of type Letter as a parameter.
 i.e. 
-class Letter (x_lin, y_lin, ..., z_ang)
-  self.x_l = x_lin
-  ...
-  self.z_a = z_ang 
-'# the attributes would be arrays, I know it would not be written this way but I know it is possible
-G = Letter([0.5, ...], [1.0, ...], ..., [0.0, ...])
+class Letter (x_lin, y_lin, ..., z_ang)  
+  self.x_l = x_lin  
+  ...  
+  self.z_a = z_ang  
+ 
+'# the attributes would be arrays, I know it would not be written this way but I know it is possible  
 
-'# when calling the function that will draw
+G = Letter([0.5, ...], [1.0, ...], ..., [0.0, ...])  
+
+'# when calling the function that will draw  
+
 turtlename(G)
 
 
