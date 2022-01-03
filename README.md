@@ -74,8 +74,10 @@ https://gist.github.com/bayodesegun/d71eda74018e9d208ebc2f1c478346e4
 ## Idea  
 Since we all have different names, by doing this assignment we were unconsciously drawing the entire alphabet (or most of it). Therefore only withing our class there are the velocity coordinates of turtlesim to make most of the letters.  
 Maybe it would be possible to create a class name Letter with the linear and angular velocities arrays as the attributes.  
-Then we would build the database or enter all our letters this way and for the function that creates the topic, instead of looping through the array we made for our initials, we give the object of type Letter as a parameter.
-i.e. 
+Then we would build the database or enter all our letters this way and for the function that creates the topic, instead of looping through the array we made for our initials, we give the object of type Letter as a parameter.  
+
+i.e.  
+
 class Letter (x_lin, y_lin, ..., z_ang)  
   self.x_l = x_lin  
   ...  
